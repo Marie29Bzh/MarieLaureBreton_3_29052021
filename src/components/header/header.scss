@@ -1,0 +1,15 @@
+header{
+    display: grid;
+    grid-template-areas: "retour logo .";
+    grid-template-columns: 1fr auto 1fr;
+    a {
+        @include flex-centered;
+        width: 2rem;
+        height: 2rem;
+        grid-area: retour;
+    }
+    .header_logo{
+        grid-area: logo;
+        font-family: shrikhand , cursive;
+    }
+}

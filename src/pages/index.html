@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <%- include('../components/header/header.html', { "back" : false }); %>
+  <main>
+    <section class="search">
+      <button type="button" class="map">
+        <i class="fas fa-map-marker-alt"></i>
+      </button>
+      <div class="text">
+        <input type="text" class="searchTerm" placeholder="Paris, Belleville">
+      </div>
+    </section>
+    <section class="explo">
+      <h2 class="explo_titre">Réservez le menu qui<br>vous convient</h2>
+      <p class="explo_st"> Découvrez des restaurants d'exception, séléctionnés par nos soins </p>
+      <button type="button" class="explo_btn"> Explorer nos restaurants </button>
+    </section>
+    <section class="fonction">
+      <h2 class="fonction_titre">Fonctionnement</h2>
+      <ol class="number">
+        <li>
+          <i class="fas fa-mobile-alt"></i>
+          Choisissez un restaurant</li>
+        <li>
+          <i class="fas fa-list-ul fonction_icon"></i>
+          Composez votre menu</button></li>
+        <li>
+          <i class="fas fa-store fonction_icon"></i>
+          Dégustez au restaurant</button></li>
+      </ol>
+    </section>
+    <section class="restaurant">
+      <h2>Restaurants</h2>
+        <article>
+          <img src="/2_note_enchantee.jpg" alt="la_palette_du_goût">
+          <h3>Auberge la Cannebière</h3>
+          <p>Nuit à partir de 25€</p>
+          <aside class="stars fourstars"></aside>
+        </article>
+    </section>
+  </main>
+  <h1>test 3</h1>
+  <%- include('../components/restaurant/restaurant.html', { "nom" : "Chic à la Française" }); %>
+
+  <%- include('../components/footer/footer.html'); %>
+</body>
+
+</html>
