@@ -1,5 +1,15 @@
-footer{
-  background-color: black;
+footer {
+  background-color: #353535;
   color: white;
-  border: none;
+  padding: 1em;
+
+  /*border: none;*/
+  .footer_logo {
+    font-family: shrikhand, cursive;
+  }
+
+  .mail {
+    color: white;
+    text-decoration: none;
+  }
 }

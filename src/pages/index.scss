@@ -89,6 +89,58 @@ ol.number {
             margin-left: -1rem;
         }
     }
+}
 
+section.restaurant {
+    padding: 1em 1.5em;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas:
+        "photo photo"
+        "nom coeur"
+        "ville ."
+    ;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 2px #dad8d8;
+    margin-bottom: 10px;
+    max-width: 335px;
+
+    img {
+        width: 100%;
+        height: 200px;
+        grid-area: photo;
+        object-fit: cover;
+        grid-area: photo;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    h3 {
+        grid-area: nom;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 7px;
+    }
+
+    p {
+        grid-area: ville;
+        margin-top: 0;
+        margin-bottom: 7px;
+        margin-left: 7px;
+    }
+
+    .fa-heart {
+        font-family: 'Font Awesome 5 Free';
+        content: "f004";
+        grid-area: coeur;
+        font-size: x-large;
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
