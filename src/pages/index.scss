@@ -69,8 +69,7 @@ ol.number {
         border-radius: 20px;
         align-items: center;
         height: 50px;
-        border: 2px solid #F2F2F2;
-        background: none;
+        box-shadow: 0px 1px 6px 3px #f2f2f2;
         font-weight: bolder;
         width: 280px;
         margin-bottom: 1em;
@@ -89,10 +88,21 @@ ol.number {
             margin-left: -1rem;
         }
     }
+
+
+
+    li:hover {
+        background: #efe4fd;
+
+        i#icon_fct {
+            color: #9356DC;
+        }
+    }
 }
 
 section.restaurant {
     padding: 1em 1.5em;
+    background: #f3f3f369;
 }
 
 article {
@@ -108,6 +118,7 @@ article {
     box-shadow: 2px 2px 5px 2px #dad8d8;
     margin-bottom: 10px;
     max-width: 335px;
+    cursor: pointer;
 
     img {
         width: 100%;
@@ -143,4 +154,15 @@ article {
         justify-content: space-around;
     }
 
+    .fa-heart:hover {
+        transition: 1s ease-in-out;
+        color: linear-gradient(182deg, #ff79da, 50%, #9356DC);
+        background: -webkit-linear-gradient(249deg, #9356dc 30%, #ff79da 80%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: xx-large;
+        font-weight: 800;
+        font-size: xx-large;
+        font-weight: 800;
+    }
 }
