@@ -1,3 +1,14 @@
-article.plat{
-    
+article.plat {
+    display: flex;
+    flex-direction: column;
+    max-width: initial;
+}
+
+aside.prix {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: .1em;
+    padding-right: 1rem;
 }

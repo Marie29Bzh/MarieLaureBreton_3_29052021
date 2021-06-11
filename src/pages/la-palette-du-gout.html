@@ -1,32 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>la-palette-du-gout</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <%- include('../components/header/header.html', {
     "back" : true
   }); %>
+  <img src="palette.jpg">
+  <main class="menu">
+    <section class="entête">
+      <h1 class="nom">La palette du goût</h1>
+      <i class="far fa-heart"></i>
+    </section>
+    <section>
+      <h2 class="menu">ENTRÉES</h2>
 
-  <h1>A la Française</h1>
-  <main>
-      <section>
-          <h2>entrée</h2>
-
-
-          <%- include('../components/plat/plat.html', {
-            "nom" : "Chic à la Française",
-            "ingredients" : "lmklmklmkm",
-            "prix": 12
+      <%- include('../components/plat/plat.html', {
+            "nom" : "Fricassée d'escargot",
+            "ingredients" : "Au piment d'Espelette",
+            "prix": "25€",
         }); %>
 
-      </section>
+      <%- include('../components/plat/plat.html', {
+          "nom" : "Foie gras de canard mi-cuit",
+          "ingredients" : "Et ses copeaux de truffe noire",
+          "prix": "35€",
+      }); %>
+
+      <%- include('../components/plat/plat.html', {
+        "nom" : "Oeuf au plat",
+        "ingredients" : "Assaisonné à la truffe sur lit de caviar",
+        "prix": "20€",
+    }); %>
+    </section>
+    <section>
+      <h2 class="menu">PLATS</h2>
+
+      <%- include('../components/plat/plat.html', {
+        "nom" : "Filet de boeuf aux herbes",
+        "ingredients" : "Accompagné de sa ribambelle de légumes",
+        "prix": "40€",
+    }); %>
+
+      <%- include('../components/plat/plat.html', {
+        "nom" : "Parmentier de queue de boeuf",
+        "ingredients" : "À la truffe noire sur sa purée de panais",
+        "prix": "35€",
+    }); %>
+
+      <%- include('../components/plat/plat.html', {
+      "nom" : "Filet de turbot",
+      "ingredients" : "Aux agrumes",
+      "prix": "44€",
+  }); %>
+
+    </section>
+    <section>
+      <h2 class="menu">DESSERTS</h2>
+
+      <%- include('../components/plat/plat.html', {
+        "nom" : "Paris-Brest",
+        "ingredients" : "Revisité",
+        "prix": "18€",
+    }); %>
+
+      <%- include('../components/plat/plat.html', {
+      "nom" : "Macaron au chocolat d'exception ",
+      "ingredients" : "Et glace à la vanille de Madagascar",
+      "prix": "22€",
+  }); %>
+
+      <%- include('../components/plat/plat.html', {
+    "nom" : "Mousse au chocolat  ",
+    "ingredients" : "Au piment d'Espelette et à la truffe noire",
+    "prix": "23€",
+}); %>
+
+      <button type="button" class="explo_btn"> Commander </button>
+    </section>
+
   </main>
 
   <%- include('../components/footer/footer.html'); %>
 </body>
+
 </html>

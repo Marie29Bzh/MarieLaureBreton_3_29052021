@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <title>A-la-francaise</title>
+  <title>la-note-enchantee</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,30 +14,30 @@
   <%- include('../components/header/header.html', {
     "back" : true
   }); %>
-  <img src="francaise.jpg">
+  <img src="note.jpg">
   <main class="menu">
     <section class="entête">
-      <h1 class="nom">A la française</h1>
+      <h1 class="nom">La note enchantée</h1>
       <i class="far fa-heart"></i>
     </section>
     <section>
       <h2 class="menu">ENTRÉES</h2>
 
       <%- include('../components/plat/plat.html', {
-            "nom" : "Tartare de poulpe acidulé",
-            "ingredients" : "Aux zestes d'orange",
+            "nom" : "Ravioles de foie gras",
+            "ingredients" : "Accompagnés de leur crème à la truffe",
             "prix": "25€",
         }); %>
 
       <%- include('../components/plat/plat.html', {
-          "nom" : "Velouté de légumes d'antan",
-          "ingredients" : "Carotte, panais, topinambour",
+          "nom" : "Caviar osciètre",
+          "ingredients" : "Sur blini à la farine de blé noir",
           "prix": "35€",
       }); %>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Soupe à l'oignon",
-        "ingredients" : "Revisitée",
+        "nom" : "Homard et espuma de potiron",
+        "ingredients" : "Mariné aux zestes d'orange",
         "prix": "20€",
     }); %>
     </section>
@@ -45,20 +45,20 @@
       <h2 class="menu">PLATS</h2>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Coquilles Saint-Jacques",
-        "ingredients" : "Accompagnées d'une purée de panais",
+        "nom" : "Noix de coquilles Saint-Jacques",
+        "ingredients" : "Sur lit de purée de céleri-rave",
         "prix": "40€",
     }); %>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Magret de canard",
-        "ingredients" : "Et parmentier de pommes de terre",
+        "nom" : "Langoustine poêlée",
+        "ingredients" : "Purée de patate douce",
         "prix": "35€",
     }); %>
 
       <%- include('../components/plat/plat.html', {
-      "nom" : "Pigeonneau d’Ille-et-Vilaine",
-      "ingredients" : "Sur son lit de gnocchis aux légumes",
+      "nom" : "Mijoté de queue de boeuf",
+      "ingredients" : "Et riz sauvage aux zestes de citron",
       "prix": "44€",
   }); %>
 
@@ -67,20 +67,20 @@
       <h2 class="menu">DESSERTS</h2>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Pétales de violettes glacés",
-        "ingredients" : "Et purée de noisettes",
+        "nom" : "Macaron noisette et chocolat",
+        "ingredients" : "Glace au caramel brun et sel de Guérande",
         "prix": "18€",
     }); %>
 
       <%- include('../components/plat/plat.html', {
-      "nom" : "Fondant au chocolat",
-      "ingredients" : "Revisité",
+      "nom" : "Baba au rhum revisité",
+      "ingredients" : "Avec son coulis de citron",
       "prix": "22€",
   }); %>
 
       <%- include('../components/plat/plat.html', {
-    "nom" : "Millefeuille croustillant",
-    "ingredients" : "Myrtilles et pâte d’amande",
+    "nom" : "Tarte au citron meringuée",
+    "ingredients" : "Déstructurée",
     "prix": "23€",
 }); %>
 

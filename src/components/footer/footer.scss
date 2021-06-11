@@ -1,7 +1,7 @@
 footer {
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 35px 30px 30px 30px 50px;
+  grid-template-rows: 35px 30px 30px 30px 30px;
   grid-template-areas: "logo logo"
     "ustensiles resto"
     "hands partner"
@@ -9,7 +9,8 @@ footer {
     "mail mail";
   background-color: #353535;
   color: white;
-  padding: 1em;
+  padding: 1rem 1rem 3rem 1rem;
+  align-items: center;
 
   /*border: none;*/
   .footer_logo {
@@ -18,12 +19,12 @@ footer {
     margin: 0;
   }
 
-  i#icon {
+  /*i#icon {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-  }
+  }*/
 
   .fa-utensils {
     grid-area: ustensiles;

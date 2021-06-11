@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <title>A-la-francaise</title>
+  <title>le-delice-des-sens</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,30 +14,30 @@
   <%- include('../components/header/header.html', {
     "back" : true
   }); %>
-  <img src="francaise.jpg">
+  <img src="delice.jpg">
   <main class="menu">
     <section class="entête">
-      <h1 class="nom">A la française</h1>
+      <h1 class="nom">Le délice des sens</h1>
       <i class="far fa-heart"></i>
     </section>
     <section>
       <h2 class="menu">ENTRÉES</h2>
 
       <%- include('../components/plat/plat.html', {
-            "nom" : "Tartare de poulpe acidulé",
-            "ingredients" : "Aux zestes d'orange",
+            "nom" : "Fricassée d'escargot",
+            "ingredients" : "Au piment d'Espelette",
             "prix": "25€",
         }); %>
 
       <%- include('../components/plat/plat.html', {
-          "nom" : "Velouté de légumes d'antan",
-          "ingredients" : "Carotte, panais, topinambour",
+          "nom" : "Foie gras de canard mi-cuit",
+          "ingredients" : "Et ses copeaux de truffe noire",
           "prix": "35€",
       }); %>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Soupe à l'oignon",
-        "ingredients" : "Revisitée",
+        "nom" : "Oeuf au plat",
+        "ingredients" : "Assaisonné à la truffe sur lit de caviar",
         "prix": "20€",
     }); %>
     </section>
@@ -45,20 +45,20 @@
       <h2 class="menu">PLATS</h2>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Coquilles Saint-Jacques",
-        "ingredients" : "Accompagnées d'une purée de panais",
+        "nom" : "Filet de boeuf aux herbes",
+        "ingredients" : "Accompagné de sa ribambelle de légumes",
         "prix": "40€",
     }); %>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Magret de canard",
-        "ingredients" : "Et parmentier de pommes de terre",
+        "nom" : "Parmentier de queue de boeuf",
+        "ingredients" : "À la truffe noire sur sa purée de panais",
         "prix": "35€",
     }); %>
 
       <%- include('../components/plat/plat.html', {
-      "nom" : "Pigeonneau d’Ille-et-Vilaine",
-      "ingredients" : "Sur son lit de gnocchis aux légumes",
+      "nom" : "Filet de turbot",
+      "ingredients" : "Aux agrumes",
       "prix": "44€",
   }); %>
 
@@ -67,20 +67,20 @@
       <h2 class="menu">DESSERTS</h2>
 
       <%- include('../components/plat/plat.html', {
-        "nom" : "Pétales de violettes glacés",
-        "ingredients" : "Et purée de noisettes",
+        "nom" : "Paris-Brest",
+        "ingredients" : "Revisité",
         "prix": "18€",
     }); %>
 
       <%- include('../components/plat/plat.html', {
-      "nom" : "Fondant au chocolat",
-      "ingredients" : "Revisité",
+      "nom" : "Macaron au chocolat d'exception ",
+      "ingredients" : "Et glace à la vanille de Madagascar",
       "prix": "22€",
   }); %>
 
       <%- include('../components/plat/plat.html', {
-    "nom" : "Millefeuille croustillant",
-    "ingredients" : "Myrtilles et pâte d’amande",
+    "nom" : "Mousse au chocolat  ",
+    "ingredients" : "Au piment d'Espelette et à la truffe noire",
     "prix": "23€",
 }); %>
 

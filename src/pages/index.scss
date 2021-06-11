@@ -105,6 +105,10 @@ section.restaurant {
     background: #f3f3f369;
 }
 
+h2 {
+    font-weight: bold;
+}
+
 article {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -118,6 +122,7 @@ article {
     box-shadow: 2px 2px 5px 2px #dad8d8;
     margin-bottom: 10px;
     max-width: 335px;
+    text-decoration: none;
     cursor: pointer;
 
     img {
@@ -125,7 +130,6 @@ article {
         height: 200px;
         grid-area: photo;
         object-fit: cover;
-        grid-area: photo;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
@@ -156,13 +160,19 @@ article {
 
     .fa-heart:hover {
         transition: 1s ease-in-out;
-        color: linear-gradient(182deg, #ff79da, 50%, #9356DC);
-        background: -webkit-linear-gradient(249deg, #9356dc 30%, #ff79da 80%);
-        background-clip: text;
+        //color: linear-gradient(182deg, $primaire, 50%, #9356DC);
+        background: -webkit-linear-gradient(249deg, $secondaire 30%, $primaire 80%);
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: xx-large;
         font-weight: 800;
-        font-size: xx-large;
-        font-weight: 800;
     }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }

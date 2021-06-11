@@ -1,0 +1,29 @@
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+main.menu {
+    background-color: #f3f3f3;
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    padding: 0.5em;
+}
+
+section.entête {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "nom coeur";
+
+
+    .fa-heart {
+        grid-area: coeur;
+        align-items: center;
+        font-size: x-large;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
