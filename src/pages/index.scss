@@ -42,7 +42,16 @@ button.explo_btn {
     width: 200px;
     cursor: pointer;
     color: white;
-    background: linear-gradient(182deg, #ff79da, 50%, #9356DC);
+    box-shadow: 0px 1px 6px 3px #c4c2c2;
+    background: linear-gradient(182deg, $primaire, 50%, $secondaire);
+
+    &:hover {
+        background: linear-gradient(182deg, lighten($primaire, 5%), 50%, darken($secondaire, 10%));
+        transform: perspective(1300px) scale(1.03);
+        transform-origin: 50% center;
+        transition: 1s ease-in-out;
+        box-shadow: 0px 1px 6px 3px #919191;
+    }
 }
 
 section.fonction {
@@ -68,10 +77,10 @@ ol.number {
         grid-template-columns: 2rem 2rem auto;
         border-radius: 20px;
         align-items: center;
-        height: 50px;
+        height: 70px;
         box-shadow: 0px 1px 6px 3px #f2f2f2;
         font-weight: bolder;
-        width: 280px;
+        width: 325px;
         margin-bottom: 1em;
         cursor: pointer;
 
@@ -81,7 +90,7 @@ ol.number {
             width: 2rem;
             height: 2rem;
             color: white;
-            background-color: #9356DC;
+            background-color: $secondaire;
             border-radius: 50%;
             justify-content: center;
             align-items: center;
@@ -95,14 +104,14 @@ ol.number {
         background: #efe4fd;
 
         i#icon_fct {
-            color: #9356DC;
+            color: $secondaire;
         }
     }
 }
 
 section.restaurant {
     padding: 1em 1.5em;
-    background: #f3f3f369;
+    background: #f3f3f3;
 }
 
 h2 {
@@ -157,22 +166,23 @@ article {
         display: flex;
         justify-content: space-around;
     }
-
-    .fa-heart:hover {
-        transition: 1s ease-in-out;
-        //color: linear-gradient(182deg, $primaire, 50%, #9356DC);
-        background: -webkit-linear-gradient(249deg, $secondaire 30%, $primaire 80%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: xx-large;
-        font-weight: 800;
-    }
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-a:visited {
-    color: black;
+article.nouveau::after {
+    content: "Nouveau";
+    font-weight: bold;
+    color: $quaternaire;
+    background: $tertiaire;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    margin-top: -13rem;
+    height: 2rem;
+    margin-left: -2rem;
 }

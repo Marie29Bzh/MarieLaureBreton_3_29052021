@@ -4,9 +4,10 @@ header{
     grid-template-columns: 1fr auto 1fr;
     a {
         @include flex-centered;
-        width: 2rem;
-        height: 2rem;
+        /*width: 2rem;
+        height: 2rem;*/
         grid-area: retour;
+        font-size: x-large;
     }
     .header_logo{
         grid-area: logo;

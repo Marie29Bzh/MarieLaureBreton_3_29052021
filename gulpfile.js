@@ -21,10 +21,9 @@ function watch() {
       baseDir: "./www"
     }
   });
-
-  gulp.watch("./www").on("change", browserSync.reload);
   gulp.watch("./src/**/*.scss").on("change", makeCss);
   gulp.watch("./src/**/*.html").on("change", makePage);
+  gulp.watch("./www").on("change", browserSync.reload);
 };
 
 

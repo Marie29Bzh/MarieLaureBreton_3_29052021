@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <%- include('../components/loader/loader.html') %>
   <%- include('../components/header/header.html', { "back" : false }); %>
   <main>
     <section class="search">
@@ -43,7 +44,7 @@
     <section class="restaurant">
       <h2>Restaurants</h2>
       <a href="/la-palette-du-gout.html">
-        <article>
+        <article class="nouveau">
           <img src="palette.jpg">
           <h3>La palette du goût</h3>
           <p>Ménilmontant</p>
@@ -51,7 +52,7 @@
         </article>
       </a>
       <a href="/la-note-enchantee.html">
-        <article>
+        <article class="nouveau">
           <img src="note.jpg">
           <h3>La note enchantée</h3>
           <p>Charonne</p>

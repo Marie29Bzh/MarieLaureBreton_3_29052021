@@ -12,11 +12,10 @@ main.menu {
     padding: 0.5em;
 }
 
-section.entête {
+section.entete {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-areas: "nom coeur";
-
 
     .fa-heart {
         grid-area: coeur;
@@ -26,4 +25,25 @@ section.entête {
         justify-content: space-around;
     }
 
+    h1.nom {
+        margin-left: 5px;
+        font-size: 30px;
+    }
+}
+
+h2.menu {
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+h2.menu::after {
+    background: $tertiaire;
+    display: block;
+    width: 3rem;
+    height: 2px;
+    content: "";
+}
+
+div {
+    text-align: center;
 }

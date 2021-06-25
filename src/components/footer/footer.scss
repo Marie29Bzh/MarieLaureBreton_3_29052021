@@ -12,19 +12,12 @@ footer {
   padding: 1rem 1rem 3rem 1rem;
   align-items: center;
 
-  /*border: none;*/
+
   .footer_logo {
     font-family: shrikhand, cursive;
     grid-area: logo;
     margin: 0;
   }
-
-  /*i#icon {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }*/
 
   .fa-utensils {
     grid-area: ustensiles;

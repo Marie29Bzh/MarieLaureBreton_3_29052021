@@ -1,12 +1,13 @@
 $primaire : #ff79da;
 $secondaire : #9356DC;
-
+$tertiaire :#99E2D0;
+$quaternaire :#008766;
+ 
 
 @mixin flex-centered {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 body {
@@ -19,6 +20,11 @@ h1 {
     font-family: shrikhand, cursive;
 }
 
-h2.menu {
-    font-weight: 200;
+.fa-heart:hover {
+    transition: 1s ease-in-out;
+    background: -webkit-linear-gradient(249deg, $secondaire 30%, $primaire 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    font-weight: 800;
 }
