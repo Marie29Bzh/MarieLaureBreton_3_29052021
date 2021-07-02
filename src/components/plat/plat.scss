@@ -3,8 +3,6 @@ $duree : 1s;
 article.plat {
     display: flex;
     max-width: initial;
-    //flex-direction: column;
-    //max-width: initial;
     opacity: 0;
     animation: fondu 1s forwards;
 
@@ -57,7 +55,6 @@ article.plat {
             width: calc(100% - 7rem);
         }
         .fa-check-circle:before {
-            //transform: rotate(90deg);
             animation: three 1s forwards;
             animation-direction: alternate;
         }

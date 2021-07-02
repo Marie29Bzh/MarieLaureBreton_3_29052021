@@ -2,7 +2,7 @@ $primaire : #ff79da;
 $secondaire : #9356DC;
 $tertiaire :#99E2D0;
 $quaternaire :#008766;
- 
+
 
 @mixin flex-centered {
     display: flex;
@@ -27,4 +27,8 @@ h1 {
     -webkit-text-fill-color: transparent;
     font-size: xx-large;
     font-weight: 800;
+}
+
+article:hover, article:focus {
+    transform: translateY(-4px);
 }

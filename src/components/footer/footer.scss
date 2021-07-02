@@ -9,14 +9,24 @@ footer {
     "mail mail";
   background-color: #353535;
   color: white;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   align-items: center;
+
+  @media screen AND (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 
 
   .footer_logo {
     font-family: shrikhand, cursive;
     grid-area: logo;
     margin: 0;
+
+    @media screen AND (min-width:768px) {
+      margin: 16px;
+    }
   }
 
   .fa-utensils {
