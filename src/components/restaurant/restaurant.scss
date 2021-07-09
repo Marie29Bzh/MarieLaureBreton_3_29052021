@@ -50,6 +50,7 @@ article {
         display: flex;
         justify-content: space-around;
     }
+
     &.nouveau::after {
         content: "Nouveau";
         font-weight: bold;
@@ -61,12 +62,6 @@ article {
         width: 5rem;
         margin-top: -13rem;
         height: 2rem;
-        margin-left: -2rem;
-    
-        @media screen AND (min-width:768px) {
-            //margin-left: -2.5rem;
-        }
+        margin-left: -2rem
     }
 }
-
-

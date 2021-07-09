@@ -46,7 +46,7 @@ button.explo_btn {
     background: linear-gradient(182deg, $primaire, 50%, $secondaire);
 
     &:hover {
-        background: linear-gradient(182deg, lighten($primaire, 5%), 50%, darken($secondaire, 10%));
+        background: linear-gradient(182deg, lighten($secondaire, 10%), 50%, darken($primaire, 5%));
         transform: perspective(1300px) scale(1.03);
         transform-origin: 50% center;
         transition: 1s ease-in-out;
@@ -59,9 +59,16 @@ section.fonction {
     flex-wrap: wrap;
     padding: 1em;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-content: flex-start;
     align-items: flex-start;
+
+    @media screen AND (min-width:1024px) {
+        padding: 1em;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
 
     i {
         color: #727171;
@@ -93,6 +100,12 @@ ol.number {
             margin-right: 10rem;
         }
 
+        @media screen AND (min-width:1024px) {
+            margin-right: 0.5rem;
+            margin-left: 1rem;
+            width: 280px;
+        }
+
         &::before {
             content: counter(li);
             display: flex;
@@ -112,7 +125,7 @@ ol.number {
     li:hover {
         background: #efe4fd;
 
-        i#icon_fct {
+        i {
             color: $secondaire;
         }
     }
@@ -143,21 +156,8 @@ section.restaurant {
 h2 {
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
-
-
-/*.restos {
-    text-align: left;
-
-    @media screen AND (min-width:768px) {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 40px;
-        row-gap: 30px;
-    }
-}*/

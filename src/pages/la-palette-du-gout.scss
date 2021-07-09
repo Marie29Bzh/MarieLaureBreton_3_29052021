@@ -21,10 +21,6 @@ section.entete {
     grid-template-columns: 80% 20%;
     grid-template-areas: "nom coeur";
 
-    @media screen AND (min-width:768px) {
-        grid-template-columns: 20% 10%;
-    }
-
     .fa-heart {
         grid-area: coeur;
         align-items: center;
@@ -59,8 +55,14 @@ h2.menu::after {
 @media screen AND (min-width:768px) {
     .carte {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 40px;
+    }
+}
+
+@media screen AND (min-width:1025px) {
+    .carte {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

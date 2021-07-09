@@ -14,10 +14,15 @@ footer {
 
   @media screen AND (min-width:768px) {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media screen AND (min-width:1024px) {
+    display: flex;
     flex-direction: column;
     padding: 0;
   }
-
 
   .footer_logo {
     font-family: shrikhand, cursive;
