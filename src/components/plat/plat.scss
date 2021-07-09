@@ -2,9 +2,9 @@ $duree : 1s;
 
 article.plat {
     display: flex;
-    max-width: initial;
     opacity: 0;
     animation: fondu 1s forwards;
+    max-width: 350px;
 
 
     @for $i from 1 through 5 {
@@ -52,8 +52,8 @@ article.plat {
             width: 4rem;
         }
 
-        p {
-            width: calc(100% - 7rem);
+        div {
+            width: calc(100% - 7.6rem);
         }
 
         .fa-check-circle:before {

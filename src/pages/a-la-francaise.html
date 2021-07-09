@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <title>A-la-francaise</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+    integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=='
+    crossorigin='anonymous' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <title>A la francaise</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,75 +26,74 @@
       <i class="far fa-heart"></i>
     </section>
     <div class="carte">
-    <section>
-      <h2 class="menu">ENTRÉES</h2>
+      <section>
+        <h2 class="menu">ENTRÉES</h2>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
             "nom" : "Tartare de poulpe acidulé",
             "ingredients" : "Aux zestes d'orange",
             "prix": "25€",
         }); %>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
           "nom" : "Velouté de légumes d'antan",
           "ingredients" : "Carotte, panais, topinambour",
           "prix": "35€",
       }); %>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
         "nom" : "Soupe à l'oignon",
         "ingredients" : "Revisitée",
         "prix": "20€",
     }); %>
-    </section>
-    <section>
-      <h2 class="menu">PLATS</h2>
+      </section>
+      <section>
+        <h2 class="menu">PLATS</h2>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
         "nom" : "Coquilles Saint-Jacques",
         "ingredients" : "Accompagnées d'une purée de panais",
         "prix": "40€",
     }); %>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
         "nom" : "Magret de canard",
         "ingredients" : "Et parmentier de pommes de terre",
         "prix": "35€",
     }); %>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
       "nom" : "Pigeonneau d’Ille-et-Vilaine",
       "ingredients" : "Sur son lit de gnocchis aux légumes",
       "prix": "44€",
   }); %>
 
-    </section>
-    <section>
-      <h2 class="menu">DESSERTS</h2>
+      </section>
+      <section>
+        <h2 class="menu">DESSERTS</h2>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
         "nom" : "Pétales de violettes glacés",
         "ingredients" : "Et purée de noisettes",
         "prix": "18€",
     }); %>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
       "nom" : "Fondant au chocolat",
       "ingredients" : "Revisité",
       "prix": "22€",
   }); %>
 
-      <%- include('../components/plat/plat.html', {
+        <%- include('../components/plat/plat.html', {
     "nom" : "Millefeuille croustillant",
     "ingredients" : "Myrtilles et pâte d’amande",
     "prix": "23€",
 }); %>
-
+      </section>
       <div class="cmd">
         <button type="button" class="explo_btn"> Commander </button>
       </div>
-    </section>
-    s</div>
+    </div>
 
   </main>
 

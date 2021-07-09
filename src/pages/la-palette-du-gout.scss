@@ -50,15 +50,38 @@ h2.menu::after {
 
 .cmd {
     text-align: center;
+    grid-area: cmd;
 }
 
 @media screen AND (min-width:768px) {
     .carte {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr auto;
+        -moz-column-gap: 40px;
         column-gap: 40px;
+        width: 46.25rem;
+        margin: auto;
+        grid-template-areas:
+            "entrees plats"
+            "desserts ."
+            "cmd cmd";
     }
+
+    section:nth-of-type(1) {
+        grid-area: entrees;
+    }
+
+    section:nth-of-type(2) {
+        grid-area: plats;
+    }
+
+    section:nth-of-type(3) {
+        grid-area: desserts;
+    }
+
+
+
 }
 
 @media screen AND (min-width:1025px) {
